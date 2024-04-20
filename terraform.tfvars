@@ -1,0 +1,16 @@
+settings = {
+  api_name                 = "example_api"
+  api_description          = "This is an example API"
+  resource_path_part       = "example_resource"
+  http_method              = "GET"
+  authorization            = "NONE"
+  integration_http_method  = "POST"
+  integration_type         = "AWS_PROXY"
+  lambda_function_name     = "example_lambda"
+  lambda_handler           = "index.handler"
+  lambda_runtime           = "nodejs18.x"
+  lambda_filename          = "lambda_function_payload.zip"
+  lambda_permission_statement_id = "AllowExecutionFromAPIGateway"
+  lambda_permission_action       = "lambda:InvokeFunction"
+  lambda_permission_principal    = "apigateway.amazonaws.com"
+}
